@@ -1,0 +1,67 @@
+html, body {
+	background: transparent;
+  	overflow: hidden;
+}
+
+a {
+	text-shadow: none;
+}
+
+.list-group > a {
+	background: rgb(255 255 255 / 0.05);
+	color: #ffc107;
+	font-weight: bold;
+	border-color: rgb(255 255 255 / 0.2);
+	text-shadow: 0em 0em 0.1em black;
+	transition: 0.3s;
+}
+
+.list-group > a:hover {
+	background: #ffc107;
+	text-shadow: none;
+	color: #333;
+}
+
+#backVideo {
+	position: absolute;
+	z-index:-1;
+	width: 100%;
+	top:50%;
+	transform: translate(0,-50%);
+}
+
+.mask {
+	position: absolute;;
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	background: rgb(0 0 0 / 60%);
+}
+
+.content {
+	position:absolute;
+	z-index:10;
+	width: 100%;
+	height: 100vh;
+}
+
+.form-short {
+	max-width: 50%;
+}
+
+@media (max-width: 1120px) {
+	body {
+		background: url("../background.png") 100% 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	#backVideo {
+		display:none;
+	}
+}
+
+@media (max-width: 768px) {
+	.form-short {
+	    max-width: 100%;
+	}
+}

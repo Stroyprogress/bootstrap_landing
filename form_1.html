@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <!-- Cover example CSS -->
+    <link rel="stylesheet" href="css/cover.css">
+    <!-- Main styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- The video -->
+    <video autoplay muted loop id="backVideo">
+      <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <div class="mask"></div>
+
+    <div class="content text-center">
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+          <div class="inner">
+            <h3 class="masthead-brand">Стройпрогресс31</h3>
+            <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link" href="index.html">Главная</a>
+              <a class="nav-link" href="services.html">Услуги</a>
+              <a class="nav-link" href="partners.html">Партнерам</a>
+              <a class="nav-link" href="contacts.html">Контакты</a>
+            </nav>
+          </div>
+        </header>
+
+        <main role="main" class="inner cover text-left">
+          <h1 class="cover-heading">Форма заявки</h1>
+          <p class="lead">Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+          
+          <form>
+            <div class="form-group form-short">
+              <label for="name">Имя</label>
+              <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+            </div>
+            <div class="form-group form-short">
+              <label for="email">Эл. почта</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group form-short">
+              <label for="region">Регион</label>
+              <select class="form-control" id="region">
+                <option>Белгород</option>
+                <option>Воронеж</option>
+                <option>Курск</option>
+                <option>Орел</option>
+                <option>Москва</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comment">Коментарий</label>
+              <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-lg btn-block btn-warning">Отправить заявку</button>
+            </div>
+          </form>
+
+        </main>
+
+        <footer class="mastfoot mt-auto">
+          <div class="inner">
+            <p>© 2004 - 2021 Компания "Стройпрогресс 31"</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="libs/jquery-3.2.1.slim.min.js"></script>
+    <script src="libs/popper.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
